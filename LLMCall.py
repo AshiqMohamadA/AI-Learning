@@ -18,8 +18,6 @@ token = subprocess.check_output(
     text=True
 ).strip()
 
-print("Token retrieved successfully")
-
 url = "https://aip-df267ac9-api-management-dev.azure-api.net/ai/chat/completions?api-version=2025-01-01-preview"
 
 payload = {
@@ -43,5 +41,5 @@ response = requests.post(
 )
 
 print("Status Code:", response.status_code)
-print("\nResponse:")
+print("\nResponse:------------------")
 print(response.text)
